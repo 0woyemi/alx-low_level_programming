@@ -1,20 +1,23 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_chessboard - print chessboard given set 2D array
- * @a: 2D array
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-
-void print_chessboard(char (*a)[8])
+int main(void)
 {
-
-	int row;
-	int column;
-
-	for (row = 0; row < 8; row++)
-	{
-		for (column = 0; column < 8; column++)
-			_putchar(a[row][column]);
-		_putchar('\n');
-	}
+	char board[8][8] = {
+		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+	};
+	print_chessboard(board);
+	return (0);
 }
